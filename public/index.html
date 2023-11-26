@@ -10,11 +10,13 @@
     <meta name="description" content="Registration" />
     <link rel="icon" type="image/x-icon" href="images/apple.png" />
     <link rel="stylesheet" href="styles/Register Style.css" />
+    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
   </head>
 
-  <bod>
+  <body>
     <header>
-      <img src="images/registration.jpeg" alt="Registration Icon" />
+      <img src="images/registration.jpeg" alt="Registration Icon"/>
       <h1>Register Form</h1>
     </header>
     <section>
@@ -23,9 +25,9 @@
           <fieldset>
             <legend>Personalis:</legend>
             <label title="Enter Your First Name" for="fname">First Name:</label>
-            <input type="text" title="Your First Name" name="fname" required maxlength="20" min="4" autofocus /><br />
+            <input type="text" title="Your First Name" name="fname" required maxlength="15" min="4" autofocus /><br />
             <label title="Enter Your Last Name" for="lname">Last Name:</label>
-            <input type="text" title="Your Last Name" name="lname" required maxlength="20" min="4" /><br />
+            <input type="text" title="Your Last Name" name="lname" required maxlength="15" min="4" /><br />
 
             <label title="Enter Your Email" for="email">Email:</label>
             <input type="email" title="exapmle@gmail.com" name="email" required inputmode="email"
@@ -39,47 +41,63 @@
 
             <label title="Select Your Gender" for="gender">Gender:</label>
             <input type="radio" title="Male Gender" value="m" name="male" />
-            <label title="Male" for="male" style="font-size: 25px;display: inline;">Male</label>
+            <label title="Male" for="male" id="genderM">Male</label>
             <input type="radio" title="Female Gender" value="f" name="female" />
-            <label title="Female" for="female" style="font-size: 25px;display: inline;">Female</label><br />
+            <label title="Female" for="female" id="genderF">Female</label><br />
           </fieldset>
 
-          <label title="Select Your Programming language" for="pl"
-            style="font-size: 30px; font-weight: bold;display: inline;">Programming
+          <label title="Select Your Programming language" for="pl" id="programmingLTitle">Programming
             language:</label><br />
-          <input type="checkbox" title="HTML Programming language" value="html" checked />
-          <label title="HTML" for="html" style="font-size: 30px; font-weight: bold;display: inline;">HTML</label><br />
-          <input type="checkbox" title="CSS Programming language" value="css" />
-          <label title="CSS" for="css" style="font-size: 30px; font-weight: bold;display: inline;">CSS</label><br />
-          <input type="checkbox" title="Javascript Programming language" value="javascript" />
-          <label title="Javascript" for="javascript"
-            style="font-size: 30px; font-weight: bold;display: inline;">Javascript</label><br />
-          <input type="checkbox" title="MySQL Programming language" value="mysql" />
-          <label title="MySQL" for="mysql"
-            style="font-size: 30px; font-weight: bold;display: inline;">MySQL</label><br />
-          <input type="checkbox" title="Python Programming language" value="python" />
-          <label title="Python" for="python"
-            style="font-size: 30px; font-weight: bold;display: inline;">Python</label><br />
-          <input type="checkbox" title="Bootstrap Programming language" value="bootstrap" />
-          <label title="Bootstrap" for="bootstrap"
-            style="font-size: 30px; font-weight: bold;display: inline;">Bootstrap</label><br />
-          <input type="checkbox" title="C Programming language" value="c" />
-          <label title="C" for="c" style="font-size: 30px; font-weight: bold;display: inline;">C</label><br />
-          <input type="checkbox" title="C++ Programming language" value="c++" />
-          <label title="C++" for="c++" style="font-size: 30px; font-weight: bold;display: inline;">C++</label><br />
-          <input type="checkbox" title="C# Programming language" value="c#" />
-          <label title="C#" for="c#" style="font-size: 30px; font-weight: bold;display: inline;">C#</label><br />
-          <input type="checkbox" title="Java Programming language" value="java" />
-          <label title="Java" for="java" style="font-size: 30px; font-weight: bold;display: inline;">Java</label><br />
-          <input type="checkbox" title="Kotlin Programming language" value="kotlin" />
-          <label title="Kotlin" for="kotlin"
-            style="font-size: 30px; font-weight: bold;display: inline;">Kotlin</label><br />
-          <input type="checkbox" title="Flutter Programming language" value="flutter" />
-          <label title="Flutter" for="flutter"
-            style="font-size: 30px; font-weight: bold;display: inline;">Flutter</label><br />
+          <div id="programmingL">
+            <input type="checkbox" title="HTML Programming language" value="html" checked />
+            <label title="HTML" for="html" id="programmingLText">HTML</label>
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="CSS Programming language" value="css" />
+            <label title="CSS" for="css" id="programmingLText">CSS</label>
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Javascript Programming language" value="javascript" />
+            <label title="Javascript" for="javascript" id="programmingLText">Javascript</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="MySQL Programming language" value="mysql" />
+            <label title="MySQL" for="mysql" id="programmingLText">MySQL</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Python Programming language" value="python" />
+            <label title="Python" for="python" id="programmingLText">Python</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Bootstrap Programming language" value="bootstrap" />
+            <label title="Bootstrap" for="bootstrap" id="programmingLText">Bootstrap</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="C Programming language" value="c" />
+            <label title="C" for="c" id="programmingLText">C</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="C++ Programming language" value="c++" />
+            <label title="C++" for="c++" id="programmingLText">C++</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="C# Programming language" value="c#" />
+            <label title="C#" for="c#" id="programmingLText">C#</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Java Programming language" value="java" />
+            <label title="Java" for="java" id="programmingLText">Java</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Kotlin Programming language" value="kotlin" />
+            <label title="Kotlin" for="kotlin" id="programmingLText">Kotlin</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Flutter Programming language" value="flutter" />
+            <label title="Flutter" for="flutter" id="programmingLText">Flutter</label><br />
+          </div>
           <hr>
-          <label title="Select Your Country" for="country"
-            style="font-size: 30px; font-weight: bold; font-style: oblique">Country:</label>
+          <label title="Select Your Country" for="country" id="selectCountry">Country:</label>
           <select name="Country" title="Country">
             <option value="argentina">Argentina</option>
             <option value="australia">Australia</option>

@@ -7,6 +7,28 @@
 
 html {
   direction: rtl;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+ }
+ 
+::-webkit-scrollbar-track {
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  }
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(255,124,0);
+  background: radial-gradient(circle, rgba(255,124,0,1) 0%, rgba(183,245,71,1) 10%, rgba(83,188,148,1) 50%, rgba(72,162,239,1) 90%, rgba(177,70,252,1) 100%);
+  border-radius: 50px;
+  border-style: ridge;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(270deg, #9e4673, #3d4a59, #9e4673);
 }
 
 body {
@@ -30,7 +52,6 @@ nav {
   background: #cccccc50;
   padding: 20px;
   margin-bottom: 30px;
-  /* justify-content: space-around; */
   border-radius: 10px;
   border-color: rgb(2, 2, 2);
   box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.35), 0 24px 28px 0 rgba(0, 0, 0, 0.35);
@@ -85,9 +106,6 @@ h1 {
   border-radius: 10px;
   border-color: rgb(2, 2, 2);
   display: block;
-  /* justify-content: space-around;flex-direction: row;
-    transition: width 2s, height 2s;
-    transition-delay: 1s; */
 }
 
 #cardImg:hover {

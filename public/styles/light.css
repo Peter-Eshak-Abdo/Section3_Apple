@@ -1,0 +1,140 @@
+  body {
+    background: rgb(138, 63, 251);
+    background: radial-gradient(circle, rgba(138, 63, 251, 1) 0%, rgba(243, 213, 104, 1) 29%, rgba(93, 131, 241, 1) 38%, rgba(89, 251, 225, 1) 48%, rgba(187, 252, 70, 1) 100%);
+  }
+  
+  header {
+    background-color: rgb(225, 225, 225,.5);
+    color: rgb(25, 25, 25);
+    border-color: rgb(2, 2, 2);
+    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.35), 0 24px 28px 0 rgba(0, 0, 0, 0.35);
+  }
+  
+  nav {
+    background: rgb(225, 225, 225, .5);
+    border-color: rgb(2, 2, 2);
+    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.35), 0 24px 28px 0 rgba(0, 0, 0, 0.35);
+  }
+  
+  article {
+    background-color: rgb(225, 225, 225, .5);
+    border-color: rgb(253, 253, 253);
+    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35), 0 24px 28px 0 rgba(255, 255, 255, 0.35);
+  }
+
+  footer {
+    background-color: rgb(225, 225, 225, .5);
+    color: rgb(25, 25, 25);
+    border-color: rgb(253, 253, 253);
+    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35), 0 24px 28px 0 rgba(255, 255, 255, 0.35);
+  }
+  
+  h1 {
+    color: rgb(25, 25, 25);
+    text-shadow: 2px 2px 5px rgb(0, 60, 255);
+  }
+
+  p {
+    color: rgb(25, 25, 25);
+  }
+  
+  #headerTitle {
+    color: rgb(32, 16, 10);
+    text-shadow: -1px 0 white, 0 1px wheat, 1px 0 white, 0 -1px white;
+  }
+  
+  #cardImg {
+    border-color: rgb(253, 253, 253);
+    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35), 0 24px 28px 0 rgba(255, 255, 255, 0.35);
+  }
+  
+  #cardImg:hover {
+    border: 1px solid rgb(253, 253, 253);
+    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35), 0 24px 28px 0 rgba(255, 255, 255, 0.35);
+  }
+  
+  #cardImg img {
+    border-color: rgb(253, 253, 253);
+  }
+
+  #Li {
+    color: rgb(25, 25, 25);
+    text-shadow: 2px 2px 5px rgb(82, 122, 255);
+  }
+  
+  #PLi {
+    color: rgb(25, 25, 25);
+  }
+  
+  li {
+    color: rgb(25, 25, 25);
+  }
+  
+  #pageLinks {
+    background-color: rgb(225, 225, 225);
+    color: rgb(25, 25, 25);
+  }
+  
+  label {
+    color: rgb(25, 25, 25);
+  }
+
+  input[type="text"] {
+    background-color: rgb(225, 225, 225);
+    border: 2px solid red;
+    color: rgb(25, 25, 25);
+  }
+
+  input[type="text"]:focus {
+    background-color: rgb(225, 225, 255);
+  }
+
+  input[type="email"] {
+    background-color: rgb(225, 225, 225);
+    border: 2px solid red;
+    color: rgb(25, 25, 25);
+  }
+
+  input[type="email"]:focus {
+    background-color: rgb(225, 225, 255);
+  }
+
+  input[type="password"] {
+    background-color: rgb(225, 225, 225);
+    border: 2px solid red;
+    color: rgb(25, 25, 25);
+  }
+
+  input[type="password"]:focus {
+    background-color: rgb(225, 225, 255);
+  }
+
+  input[type="date"] {
+    background-color: rgb(225, 225, 225);
+    border: 2px solid red;
+    color: rgb(25, 25, 25);
+  }
+
+  input[type="date"]:focus {
+    background-color: rgb(225, 225, 255);
+  }
+
+  textarea {
+    border: 2px solid #333;
+    background-color: #333;
+  }
+
+  select {
+    background-color: #d4d4d4;
+  }
+
+  input[type=button],
+  input[type=submit],
+  input[type=reset] {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  #textAnimate {
+    color: rgb(225, 225, 225);
+  }

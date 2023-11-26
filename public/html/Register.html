@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" data-bs-theme="auto">
+
+  <head>
+    <script src="../js/color-modes.js"></script>
+    <title>Register</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Peter Eshak Abdo" />
+    <meta name="keywords" content="Registration" />
+    <meta name="description" content="Registration" />
+    <link rel="icon" type="image/x-icon" href="images/apple.png" />
+    <link rel="stylesheet" href="../css/Register Style.css" />
+    <link rel="stylesheet" href="../css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../css/light.css" media="(prefers-color-scheme: light)">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bondi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  </head>
+
+  <body>
+    <header>
+      <img src="../images/registration.jpeg" alt="Registration Icon" />
+      <h1>Register Form</h1>
+    </header>
+    <section>
+      <article>
+        <form action="../index.html" method="post">
+          <fieldset>
+            <legend>Personalis:</legend>
+            <label title="Enter Your First Name" for="fname">First Name:</label>
+            <input type="text" title="Your First Name" name="fname" required maxlength="15" min="4" autofocus /><br />
+            <label title="Enter Your Last Name" for="lname">Last Name:</label>
+            <input type="text" title="Your Last Name" name="lname" required maxlength="15" min="4" /><br />
+
+            <label title="Enter Your Email" for="email">Email:</label>
+            <input type="email" title="exapmle@gmail.com" name="email" required inputmode="email"
+              placeholder="exapmle@gmail.com" /><br />
+
+            <label title="Enter your Password" for="password">Password:</label>
+            <input type="password" title="Password" name="password" required minlength="8" /><br />
+
+            <label title="Enter Your Birthday Date" for="date">Birthday date:</label>
+            <input type="date" title="Date" name="date" /><br />
+
+            <label title="Select Your Gender" for="gender">Gender:</label>
+            <input type="radio" title="Male Gender" value="m" name="male" />
+            <label title="Male" for="male" id="genderM">Male</label>
+            <input type="radio" title="Female Gender" value="f" name="female" />
+            <label title="Female" for="female" id="genderF">Female</label><br />
+          </fieldset>
+
+          <label title="Select Your Programming language" for="pl" id="programmingLTitle">Programming
+            language:</label><br />
+          <div id="programmingL">
+            <input type="checkbox" title="HTML Programming language" value="html" checked />
+            <label title="HTML" for="html" id="programmingLText">HTML</label>
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="CSS Programming language" value="css" />
+            <label title="CSS" for="css" id="programmingLText">CSS</label>
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Javascript Programming language" value="javascript" />
+            <label title="Javascript" for="javascript" id="programmingLText">Javascript</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="MySQL Programming language" value="mysql" />
+            <label title="MySQL" for="mysql" id="programmingLText">MySQL</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Python Programming language" value="python" />
+            <label title="Python" for="python" id="programmingLText">Python</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Bootstrap Programming language" value="bootstrap" />
+            <label title="Bootstrap" for="bootstrap" id="programmingLText">Bootstrap</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="C Programming language" value="c" />
+            <label title="C" for="c" id="programmingLText">C</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="C++ Programming language" value="c++" />
+            <label title="C++" for="c++" id="programmingLText">C++</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="C# Programming language" value="c#" />
+            <label title="C#" for="c#" id="programmingLText">C#</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Java Programming language" value="java" />
+            <label title="Java" for="java" id="programmingLText">Java</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Kotlin Programming language" value="kotlin" />
+            <label title="Kotlin" for="kotlin" id="programmingLText">Kotlin</label><br />
+          </div>
+          <div id="programmingL">
+            <input type="checkbox" title="Flutter Programming language" value="flutter" />
+            <label title="Flutter" for="flutter" id="programmingLText">Flutter</label><br />
+          </div>
+          <hr>
+          <label title="Select Your Country" for="country" id="selectCountry">Country:</label>
+          <select name="Country" title="Country">
+            <option value="argentina">Argentina</option>
+            <option value="australia">Australia</option>
+            <option value="bahrain">Bahrain</option>
+            <option value="belgium">Belgium</option>
+            <option value="brazil">Brazil</option>
+            <option value="canada">Canada</option>
+            <option value="china">China</option>
+            <option value="colombia">Colombia</option>
+            <option value="costa Rica">Costa Rica</option>
+            <option value="croatia">Croatia</option>
+            <option value="denmark">Denmark</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="egypt">Egypt</option>
+            <option value="ethiopia">Ethiopia</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="ghana">Ghana</option>
+            <option value="greece">Greece</option>
+            <option value="guinea">Guinea</option>
+            <option value="hungary">Hungary</option>
+            <option value="iceland">Iceland</option>
+            <option value="india">India</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="iran">Iran</option>
+            <option value="iraq">Iraq</option>
+            <option value="italy">Italy</option>
+            <option value="jamaica">Jamaica</option>
+            <option value="japan">Japan</option>
+            <option value="jordan">Jordan</option>
+            <option value="kazakhstan">Kazakhstan</option>
+            <option value="kenya">Kenya</option>
+            <option value="korea">Korea</option>
+            <option value="kuwait">Kuwait</option>
+            <option value="lebanon">Lebanon</option>
+            <option value="liberia">Liberia</option>
+            <option value="libya">Libya</option>
+            <option value="madagascar">Madagascar</option>
+            <option value="malawi">Malawi</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="mexico">Mexico</option>
+            <option value="monaco">Monaco</option>
+            <option value="morocco">Morocco</option>
+            <option value="netherlands">Netherlands</option>
+            <option value="new zealand">New Zealand</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="north macedonia">North Macedonia</option>
+            <option value="norway">Norway</option>
+            <option value="oman">Oman</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="panama">Panama</option>
+            <option value="peru">Peru</option>
+            <option value="philippines">Philippines</option>
+            <option value="poland">Poland</option>
+            <option value="portugal">Portugal</option>
+            <option value="qatar">Qatar</option>
+            <option value="russia">Russia</option>
+            <option value="south korea">South Korea</option>
+            <option value="saudi arabia">Saudi Arabia</option>
+            <option value="senegal">Senegal</option>
+            <option value="serbia">Serbia</option>
+            <option value="somalia">Somalia</option>
+            <option value="south africa">South Africa</option>
+            <option value="south sudan">South Sudan</option>
+            <option value="spain">Spain</option>
+            <option value="sudan">Sudan</option>
+            <option value="sweden">Sweden</option>
+            <option value="switzerland">Switzerland</option>
+            <option value="syria">Syria</option>
+            <option value="thailand">Thailand</option>
+            <option value="turkey">Turkey</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="united arab emirates">United Arab Emirates</option>
+            <option value="united kingdom">United Kingdom</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="vietnam">Vietnam</option>
+            <option value="yemen">Yemen</option>
+            <option value="zimbabwe">Zimbabwe</option>
+          </select><br />
+          <!-- <label title="Write" for="tel">Why you come to my website?</label><br />
+        <textarea rows="5" cols="5"></textarea><br /> -->
+
+          <input type="submit" value="register" title="Register" />
+          <input type="reset" value="clear" title="Clear" />
+          <!-- <button type="submit" title="Register">Register</button><br> -->
+        </form>
+        <a href="../index.html" id="pageLink"><button id="pageLinks"><span>Home Page </span></button></a>
+      </article>
+    </section>
+    <footer>
+      <div id="animation1">
+        <p id="textAnimate">Peter Eshak Abdo</p>
+      </div><br>
+      <p>Those are just images that website is talks about it,<b> also to get your foot inside</b></p><br>
+      <div class="responsive">
+        <div id="cardImg">
+          <img src="../images/html.jpeg" alt="HTML Icon" />
+          <div id="cardText">
+            <P>About HTML</P>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div id="cardImg">
+          <img src="../images/css.jpeg" alt="CSS Icon" />
+          <div id="cardText">
+            <P>About CSS</P>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div id="cardImg">
+          <img src="../images/sql.jpeg" alt="SQL Icon" />
+          <div id="cardText">
+            <P>About SQL</P>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div id="cardImg">
+          <img src="../images/python.jpeg" alt="Python Icon" />
+          <div id="cardText">
+            <P>About Python</P>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div id="cardImg">
+          <img src="../images/php.jpeg" alt="PHP Icon" />
+          <div id="cardText">
+            <P>About PHP</P>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+
+  </body>
+
+</html>

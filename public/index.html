@@ -1,240 +1,385 @@
 <!DOCTYPE html>
-<html translate="no" lang="en">
+<html lang="ar" translate="yes" data-bs-theme="dark" dir="rtl">
 
   <head>
-    <title>Register</title>
+    <script src="bootstrap/js/color-modes.js"></script>
+    <title>الصفحة الرئسية</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Peter Eshak Abdo" />
-    <meta name="keywords" content="Registration" />
-    <meta name="description" content="Registration" />
+    <meta name="keywords" content="HTML,CSS,SQL,PHP,Python" />
+    <meta name="description" content="HTML,CSS,SQL,PHP,Python" />
     <link rel="icon" type="image/x-icon" href="images/apple.png" />
-    <link rel="stylesheet" href="styles/Register Style.css" />
-    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="css/Home Style.css" />
+    <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="css/bondi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
   </head>
 
   <body>
-    <header>
-      <img src="images/registration.jpeg" alt="Registration Icon"/>
-      <h1>Register Form</h1>
-    </header>
-    <section>
-      <article>
-        <form action="pages/Home.html" method="post" autocomplete="on">
-          <fieldset>
-            <legend>Personalis:</legend>
-            <label title="Enter Your First Name" for="fname">First Name:</label>
-            <input type="text" title="Your First Name" name="fname" required maxlength="15" min="4" autofocus /><br />
-            <label title="Enter Your Last Name" for="lname">Last Name:</label>
-            <input type="text" title="Your Last Name" name="lname" required maxlength="15" min="4" /><br />
+    <nav class="navbar navbar-expand-lg sticky-top rounded-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-apple-alt fa-xl" style="color: red;"></i></a>
+        <!-- <img src="../images/apple.png" alt="Apple logo" class="p-0 m-0 bi" width="15%" height="15%"></a> -->
+        <!-- <i class="fad fa-apple-alt fa-xl"  style="--fa-primary-color: red; --fa-secondary-color: green; --fa-secondary-opacity: 1.0;"></i></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+          aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active fw-bold" aria-current="page" href="#">Home Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="html/HTML.html">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="html/CSS.html">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="html/SQL.html">SQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="html/PHP.html">PHP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="html/Python.html">Python</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <a class="btn link-info rounded-pill main-btn" href="html/Register1.html">Login</a>
+          <div class="form-check form-switch mx-4">
+            <label for="Themes">Dark Mode</label>
+            <input type="checkbox" class="form-check-input p-2" title="Theme Mode" role="switch"
+              id="flexSwitchCheckChecked" checked onclick="myFunction()" />
 
-            <label title="Enter Your Email" for="email">Email:</label>
-            <input type="email" title="exapmle@gmail.com" name="email" required inputmode="email"
-              placeholder="exapmle@gmail.com" /><br />
-
-            <label title="Enter your Password" for="password">Password:</label>
-            <input type="password" title="Password" name="password" required minlength="8" /><br />
-
-            <label title="Enter Your Birthday Date" for="date">Birthday date:</label>
-            <input type="date" title="Date" name="date" /><br />
-
-            <label title="Select Your Gender" for="gender">Gender:</label>
-            <input type="radio" title="Male Gender" value="m" name="male" />
-            <label title="Male" for="male" id="genderM">Male</label>
-            <input type="radio" title="Female Gender" value="f" name="female" />
-            <label title="Female" for="female" id="genderF">Female</label><br />
-          </fieldset>
-
-          <label title="Select Your Programming language" for="pl" id="programmingLTitle">Programming
-            language:</label><br />
-          <div id="programmingL">
-            <input type="checkbox" title="HTML Programming language" value="html" checked />
-            <label title="HTML" for="html" id="programmingLText">HTML</label>
           </div>
-          <div id="programmingL">
-            <input type="checkbox" title="CSS Programming language" value="css" />
-            <label title="CSS" for="css" id="programmingLText">CSS</label>
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="Javascript Programming language" value="javascript" />
-            <label title="Javascript" for="javascript" id="programmingLText">Javascript</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="MySQL Programming language" value="mysql" />
-            <label title="MySQL" for="mysql" id="programmingLText">MySQL</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="Python Programming language" value="python" />
-            <label title="Python" for="python" id="programmingLText">Python</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="Bootstrap Programming language" value="bootstrap" />
-            <label title="Bootstrap" for="bootstrap" id="programmingLText">Bootstrap</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="C Programming language" value="c" />
-            <label title="C" for="c" id="programmingLText">C</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="C++ Programming language" value="c++" />
-            <label title="C++" for="c++" id="programmingLText">C++</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="C# Programming language" value="c#" />
-            <label title="C#" for="c#" id="programmingLText">C#</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="Java Programming language" value="java" />
-            <label title="Java" for="java" id="programmingLText">Java</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="Kotlin Programming language" value="kotlin" />
-            <label title="Kotlin" for="kotlin" id="programmingLText">Kotlin</label><br />
-          </div>
-          <div id="programmingL">
-            <input type="checkbox" title="Flutter Programming language" value="flutter" />
-            <label title="Flutter" for="flutter" id="programmingLText">Flutter</label><br />
-          </div>
-          <hr>
-          <label title="Select Your Country" for="country" id="selectCountry">Country:</label>
-          <select name="Country" title="Country">
-            <option value="argentina">Argentina</option>
-            <option value="australia">Australia</option>
-            <option value="bahrain">Bahrain</option>
-            <option value="belgium">Belgium</option>
-            <option value="brazil">Brazil</option>
-            <option value="canada">Canada</option>
-            <option value="china">China</option>
-            <option value="colombia">Colombia</option>
-            <option value="costa Rica">Costa Rica</option>
-            <option value="croatia">Croatia</option>
-            <option value="denmark">Denmark</option>
-            <option value="ecuador">Ecuador</option>
-            <option value="egypt">Egypt</option>
-            <option value="ethiopia">Ethiopia</option>
-            <option value="france">France</option>
-            <option value="germany">Germany</option>
-            <option value="ghana">Ghana</option>
-            <option value="greece">Greece</option>
-            <option value="guinea">Guinea</option>
-            <option value="hungary">Hungary</option>
-            <option value="iceland">Iceland</option>
-            <option value="india">India</option>
-            <option value="indonesia">Indonesia</option>
-            <option value="iran">Iran</option>
-            <option value="iraq">Iraq</option>
-            <option value="italy">Italy</option>
-            <option value="jamaica">Jamaica</option>
-            <option value="japan">Japan</option>
-            <option value="jordan">Jordan</option>
-            <option value="kazakhstan">Kazakhstan</option>
-            <option value="kenya">Kenya</option>
-            <option value="korea">Korea</option>
-            <option value="kuwait">Kuwait</option>
-            <option value="lebanon">Lebanon</option>
-            <option value="liberia">Liberia</option>
-            <option value="libya">Libya</option>
-            <option value="madagascar">Madagascar</option>
-            <option value="malawi">Malawi</option>
-            <option value="malaysia">Malaysia</option>
-            <option value="mexico">Mexico</option>
-            <option value="monaco">Monaco</option>
-            <option value="morocco">Morocco</option>
-            <option value="netherlands">Netherlands</option>
-            <option value="new zealand">New Zealand</option>
-            <option value="nigeria">Nigeria</option>
-            <option value="north macedonia">North Macedonia</option>
-            <option value="norway">Norway</option>
-            <option value="oman">Oman</option>
-            <option value="pakistan">Pakistan</option>
-            <option value="panama">Panama</option>
-            <option value="peru">Peru</option>
-            <option value="philippines">Philippines</option>
-            <option value="poland">Poland</option>
-            <option value="portugal">Portugal</option>
-            <option value="qatar">Qatar</option>
-            <option value="russia">Russia</option>
-            <option value="south korea">South Korea</option>
-            <option value="saudi arabia">Saudi Arabia</option>
-            <option value="senegal">Senegal</option>
-            <option value="serbia">Serbia</option>
-            <option value="somalia">Somalia</option>
-            <option value="south africa">South Africa</option>
-            <option value="south sudan">South Sudan</option>
-            <option value="spain">Spain</option>
-            <option value="sudan">Sudan</option>
-            <option value="sweden">Sweden</option>
-            <option value="switzerland">Switzerland</option>
-            <option value="syria">Syria</option>
-            <option value="thailand">Thailand</option>
-            <option value="turkey">Turkey</option>
-            <option value="ukraine">Ukraine</option>
-            <option value="united arab emirates">United Arab Emirates</option>
-            <option value="united kingdom">United Kingdom</option>
-            <option value="uruguay">Uruguay</option>
-            <option value="vietnam">Vietnam</option>
-            <option value="yemen">Yemen</option>
-            <option value="zimbabwe">Zimbabwe</option>
-          </select><br />
-          <!-- <label title="Write" for="tel">Why you come to my website?</label><br />
-        <textarea rows="5" cols="5"></textarea><br /> -->
-
-          <input type="submit" value="register" title="Register" />
-          <input type="reset" value="clear" title="Clear" />
-          <!-- <button type="submit" title="Register">Register</button><br> -->
-        </form>
-        <a href="pages/Home.html" id="pageLink"><button id="pageLinks"><span>Home Page </span></button></a>
-      </article>
-    </section>
-    <footer>
+        </div>
+      </div>
+    </nav>
+    <div class="landing d-flex justify-content-center align-items-center p-4 mb-3 rounded-pill">
+      <div class="text-center">
+        <p class="h1 fw-bolder text-primary">لغات البرمجة</p>
+        <p class="fs-4 text-body">
+          هي مجموعة من التعليمات أو الإرشادات المحددة التي تنتج أنواعًا مختلفة من
+          المخرجات، وذلك ضمن ما يُسمى بالخوارزميات، ويتطلب ذلك مبرمجًا لإدارة جميع
+          الخصائص المميزة للكمبيوتر لتخزين البيانات وتشغيلها بشكل صحيح تبعًا لنوع
+          اللغة المستخدم، إلا أنّ بعض اللغات الأخرى لا تتطلب ذلك، بل تكون أسهل في
+          الكتابة والقراءة، ومع التطور المستمر تم إنشاء الآلاف من لغات البرمجة
+          المختلفة، ويتم إنشاء المزيد منها كل عام، ولكن على الرغم من ذلك فإنّ
+          عددًا قليلاً نسبيًا يستخدم على نطاقٍ واسع، ومن التطبيقات على ذلك استخدام
+          البرامج لتوجيه سلوك الآلات مثل صناديق الموسيقى والبيانو منذ أوائل القرن
+          التاسع عشر، وفي الآتي سيتم الحديث عن أنواع وخصائص لغات البرمجة.
+        </p>
+        <a class="btn btn-primary rounded-pill main-btn" href="#start">Get start</a>
+      </div>
+    </div>
+    <div class="navigation row justify-content-lg-center mb-4 rounded-5 mx-auto" style="width: 98%;">
+      <div class="card text-bg-primary my-2 col-12 col-md-4 m-lg-2 rounded-5"
+        style="max-width: 250px; max-height: 250px;">
+        <div class="card-header"><a href="html/HTML.html" title="About HTML"><img src="images/html.jpeg" alt="HTML Icon"
+              class="img-fluid rounded-5" /></a></div>
+        <div class="card-body text-center">
+          <p class="card-text">About HTML</p>
+        </div>
+      </div>
+      <div class="card text-bg-primary my-2 col-12 col-md-4 m-lg-2" style="max-width: 250px; max-height: 250px;">
+        <div class="card-header"><a href="html/CSS.html" title="About CSS"><img src="images/css.jpeg" alt="CSS Icon"
+              class="img-fluid rounded-5" /></a></div>
+        <div class="card-body text-center">
+          <p class="card-text">About CSS</p>
+        </div>
+      </div>
+      <div class="card text-bg-primary my-2 col-12 col-md-4 m-lg-2" style="max-width: 250px; max-height: 250px;">
+        <div class="card-header"><a href="html/SQL.html" title="About SQL"><img src="images/sql.jpeg" alt="SQL Icon"
+              class="img-fluid rounded-5" /></a></div>
+        <div class="card-body text-center">
+          <p class="card-text">About SQL</p>
+        </div>
+      </div>
+      <div class="card text-bg-primary my-2 col-12 col-md-4 m-lg-2" style="max-width: 250px; max-height: 250px;">
+        <div class="card-header"><a href="html/Python.html" title="About Python"><img src="images/python.jpeg"
+              alt="Python Icon" class="img-fluid rounded-5" /></a></div>
+        <div class="card-body text-center">
+          <p class="card-text">About Python</p>
+        </div>
+      </div>
+      <div class="card text-bg-primary my-2 col-12 col-md-4 m-lg-2" style="max-width: 250px; max-height: 250px;">
+        <div class="card-header"><a href="html/PHP.html" title="About PHP"><img src="images/php.jpeg" alt="PHP Icon"
+              class="img-fluid rounded-5" /></a></div>
+        <div class="card-body text-center">
+          <p class="card-text">About PHP</p>
+        </div>
+      </div>
+    </div>
+    <div class="article p-4 mb-4 rounded-5">
+      <p class="fs-4 text-body" id="start">
+        يُعد تطوير مواقع الويب مجالًا دائم التطور حيث يمكنك أن تجد الكثير من
+        الفرص دائمًا. وقد تطور مجال التطوير وازدهر ضمن طرق ومجالات مختلفة منذ
+        أن ظهر لأول مرة في أوائل التسعينات. أما حاليًا، وبعد أن أصبحنا في
+        القرن الحادي والعشرين، فلا يزال تطوير الويب أحد أكثر المهارات
+        المنشودة. ولبدء مسيرتك في هذا المجال، يتعين عليك إتقان لغات تطوير
+        مواقع الويب. مع ذلك، وفي وجود العديد من لغات البرمجة المتوفرة اليوم.
+        قد تشعر بالحيرة تجاه اختيار اللغات التي يجب تعلمها، لا سيما إذا كنت
+        مبتدئًا.
+      </p>
+      <p class="h1 fw-bolder text-primary">المقصود بلغة البرمجة</p>
+      <p class="fs-4 text-body">
+        الغرض من أي لغة، بشكلٍ عام، هو أن تكون وسيلة للتواصل. وكذلك هو الحال
+        مع لغة البرمجة، فهي لغة الكمبيوتر وتُستخدم للتواصل مع أجهزة الكمبيوتر.
+        تتكون من مجموعة من التعليمات (أو التعليمات البرمجية) التي تُكتب لتنفيذ
+        إجراءات محددة. وتتيح لغات البرمجة للمطوّرين إدخال التعليمات إلى
+        الكمبيوتر بطريقة يمكن للأجهزة أن تفهمها وتتبعها. كما تتميز كل لغة
+        برمجة بصيغة وبنية وقواعد خاصة يجب اتباعها حتى تتمكن من تنفيذ التعليمات
+        البرمجية دون أخطاء.
+      </p>
+    </div>
+    <div class="article p-4 mb-4 rounded-5">
+      <p class="h1 fw-bolder text-primary">خصائص لغات البرمجة</p>
+      <p class="fs-4 text-body">بعد التعرف على عناصر وأنواع لغات البرمجة لا بدَّ من التعرف على خصائص لغات البرمجة،
+        حيث مع التطور المستمر
+        اكتسبت لغات البرمجة العديد من الميزات التي جعلت من إنشاء موقع ويب أو تطبيق هاتفي أمرًا أكثر سهولة،
+        وتتضمن
+        خصائص لغات البرمجة الآتي:</p>
+      <ul>
+        <li id="PLi"><b>البساطة والوضوح والوحدة:</b>
+          تتميز الخوارزميات المستخدمة في مختلف لغات البرمجة بأنّها موحدة، وبسيطة، وواضحة.</li>
+        <li id="PLi"><b>بيئة البرمجة:</b>
+          تم تطوير لغات البرمجة لكي تعمل مع بيئات مختلفة، مما جعل تنفيذها أكثر سهولة.</li>
+        <li id="PLi"><b>تمتلك وظيفة وهدف:</b>
+          اللغات الطبيعية فقط للتفاعل بين البشر، بينما تسمح لغات البرمجة للأشخاص بنقل تعليمات معينة إلى
+          الأجهزة لتحقيق هدف معين، إلا أنّها تتطلب درجة أكبر من الدقة والكمال.</li>
+        <li id="PLi"><b>ذات قوة تعبيرية كبيرة:</b>
+          ويندرج تحت خصائص لغات البرمجة قدرتها على التعبير عن الحسابات وترجمتها تبعًا لنوع لغة البرمجة
+          المستخدم، بالإضافة إلى استخدام تنسيقات الإدخال النصية بهدف التأثير على سلوك الكمبيوتر.</li>
+      </ul>
+    </div>
+    <div class="article p-4 mb-4 rounded-5">
+      <p class="h1 fw-bolder text-primary">السبب وراء وجود بعض لغات البرمجة التي تعمل أفضل من غيرها</p>
+      <p class="fs-4 text-body">
+        ربما لاحظت ذات مرة أن كل لغات البرمجة لا تعمل بالطريقة نفسها. وقد تجد
+        بعض اللغات أسرع من لغات أخرى. يرجع هذا الأمر إلى مستوى بساطة كل لغة.
+        ويحدد بشكل أساسي الأمور التي يمكن أن تتعامل معها لغة البرمجة تلقائيًا
+        والأمور الأخرى التي تستدعي التدخل يدويًا. وتتمثل بعض هذه العوامل فيما
+        يلي:
+      </p>
+      <ul>
+        <li>
+          يمكن أن تتسبب الإدارة التلقائية للذاكرة في جعل بعض اللغات أبطأ من
+          اللغات الأخرى التي لا تستخدم هذه العملية.
+        </li>
+        <li>
+          إذا كان يتعين تحويل أي لغة ما برمجيًا، فسيستغرق الأمر مزيدًا من
+          الوقت حيث يلزم ترجمة التعليمات البرمجية المصدر لتصبح مفهومة لدى
+          الأجهزة.
+        </li>
+        <li>تؤثر كفاءة أداة التحويل البرمجي على مدى سرعة العملية.</li>
+      </ul>
+    </div>
+    <div class="article p-4 mb-4 rounded-5">
+      <p class="h1 fw-bolder text-primary">أنواع لغات البرمجة وفق استخداماتها</p>
+      <p class="fs-4 text-body">تُصنّف لغات البرمجة المُختلفة تبعاً لنوع الاستخدام كالآتي:</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" id="PLi">
+          <p class="d-inline fs-4 fw-bold">لغات تطوير التطبيقات والبرامج:</p>
+          وهي اللغات التي تُعنى بتطوير البرامج والتطبيقات المُختلفة التي يتعامل معها المُستخدِم يومياً، وتُعد
+          كل من لغات
+          C، و #C، و ++C، و Java، و Visual Basic أشهر الأمثلة على هذا النوع من لغات البرمجة.
+        </li>
+        <li class="list-group-item" id="PLi">
+          <p class="d-inline fs-4 fw-bold">لغات تطوير الإنترنت وصفحات الويب:</p>
+          تُعتبر هذه اللغات أساس وجود الإنترنت في العالم، حيث يتم من خلالها تصميم مواقع الإنترنت، ومُتصفحاتها،
+          وتُعتبر
+          لغات HTML، وHDML، وJava، وJavaScript، وPHP، وXML، وPython من الأمثلة على هذا النوع من لغات البرمجة.
+        </li>
+        <li class="list-group-item" id="PLi">
+          <p class="d-inline fs-4 fw-bold">لغات تطوير أنظمة تشغيل أجهزة الحاسوب:</p>
+          وتُعنى هذه اللغات بتطوير البرامج اللازمة لإنشاء أنظمة تشغيل أجهزة الحاسوب وواجهاتها المُختلفة، وتُعد
+          لغتي C، و
+          Assemply من الأمثلة عليها.
+        </li>
+        <li class="list-group-item" id="PLi">
+          <p class="d-inline fs-4 fw-bold">لغات تطوير الألعاب:</p>
+          وهي التي تُعنى بتطوير ألعاب الحاسوب، أو أيةّ برامج ترفيهية أُخرى؛ كلغة ++C، ولغة Java، ولغة #C، ولغة
+          DarkBASIC.
+        </li>
+        <li class="list-group-item" id="PLi">
+          <p class="d-inline fs-4 fw-bold">لغات تطوير قواعد البيانات:</p>
+          وهي اللغات التي يتم استخدامها من قِبل مُبرمجي قواعد القواعد؛ بهدف إنشاءها، والحفاظ على عملها، ومن
+          الأمثلة على
+          هذا النوع من اللغات لغة SQL.
+        </li>
+        <li class="list-group-item" id="PLi">
+          <p class="d-inline fs-4 fw-bold">لغات تطوير الذكاء الاصطناعي:</p>
+          وهي اللغات الخاصة بتطوير برامج الذكاء الاصطناعي؛ كبرامج الروبوتات، وتُعد لغات Prolog، و Python، و
+          AIML، ولغة
+          C، و #C، و ++C من الأمثلة على اللغات التي يُمكن استخدامها لتطوير برمجيات الذكاء الاصطناعي المُختلفة.
+        </li>
+      </ul>
+    </div>
+    <div class="p-4 rounded-5">
       <div id="animation1">
         <p id="textAnimate">Peter Eshak Abdo</p>
       </div><br>
-      <p>Those are just images that website is talks about it,<b> also to get your foot inside</b></p><br>
-      <div class="responsive">
-        <div id="cardImg">
-          <img src="images/html.jpeg" alt="HTML Icon" />
-          <div id="cardText">
-            <P>About HTML</P>
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div id="cardImg">
-          <img src="images/css.jpeg" alt="CSS Icon" />
-          <div id="cardText">
-            <P>About CSS</P>
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div id="cardImg">
-          <img src="images/sql.jpeg" alt="SQL Icon" />
-          <div id="cardText">
-            <P>About SQL</P>
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div id="cardImg">
-          <img src="images/python.jpeg" alt="Python Icon" />
-          <div id="cardText">
-            <P>About Python</P>
-          </div>
-        </div>
-      </div>
-      <div class="responsive">
-        <div id="cardImg">
-          <img src="images/php.jpeg" alt="PHP Icon" />
-          <div id="cardText">
-            <P>About PHP</P>
-          </div>
-        </div>
-      </div>
 
-      <div class="clearfix"></div>
-    </footer>
-    </body>
+      <!-- <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="HTML"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="CSS"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="SQL"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="PHP"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Python"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="HTML.html" title="About HTML"><img src="../images/html.jpeg" alt="HTML Icon" /></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>About HTML language</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="CSS.html" title="About CSS"><img src="../images/css.jpeg" alt="CSS Icon" /></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>About CSS language</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="SQL.html" title="About SQL"><img src="../images/sql.jpeg" alt="SQL Icon" /></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>About SQL</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="PHP.html" title="About PHP"><img src="../images/php.jpeg" alt="PHP Icon" /></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>About PHP language</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="Python.html" title="About Python"><img src="../images/python.jpeg" alt="Python Icon" /></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>About Python language</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+      <dl>
+        <dt>HTML</dt>
+        <dd>
+          <a href="html/HTML.html" title="About HTML"><button type="button" class="pageLinks"><span>About HTML
+              </span></button></a>
+        </dd>
+        <dt>CSS</dt>
+        <dd>
+          <a href="html/CSS.html" title="About CSS"><button type="button" class="pageLinks"><span>About
+                CSS
+              </span></button></a>
+        </dd>
+        <dt>SQL</dt>
+        <dd>
+          <a href="html/SQL.html" title="About SQL"><button type="button" class="pageLinks"><span>About
+                SQL
+              </span></button></a>
+        </dd>
+        <dt>Python</dt>
+        <dd>
+          <a href="html/Python.html" title="About Python"><button type="button" class="pageLinks"><span>About Python
+              </span></button></a>
+        </dd>
+        <dt>PHP</dt>
+        <dd>
+          <a href="html/PHP.html" title="About PHP"><button type="button" class="pageLinks"><span>About
+                PHP
+              </span></button></a>
+        </dd>
+      </dl>
+    </div>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top rounded-5">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary">
+            <i class="fa-solid fa-apple-alt fa-xl" style="color: red;"></i>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Peter Eshak Abdo, Apple</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://wa.me/message/AOH44Q2TY3H2E1"><i
+                class="bi bi-whatsapp"></i></a></li>
+          <li class="ms-3"><a class="text-body" href="https://wa.me/qr/36KBTEORX2N3O1"><i
+                class="bi bi-whatsapp"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Peter-Eshak-Abdo"><i
+                class="bi bi-github"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/PeterEshakAbdo"><i
+                class="bi bi-facebook"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary"
+              href="https://youtube.com/@petereshak3109?si=aMQ3lbmePcqioSCv"><i class="bi bi-youtube"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="mailto:petereshak11@gmail.com"><i
+                class="bi bi-envelope-fill"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.dataset.bsTheme = element.dataset.bsTheme == "light" ? "dark" : "light";
+      }
+
+      // document.getElementById('btnSwitch').addEventListener('click', () => {
+      //   if (document.body.classList.contains('dark')) {
+      //     document.body.classList.remove('dark')
+      //   }
+      //   else {
+      //     document.body.classList.add('dark')
+      //   }
+      //   document.getElementById('darkTheme').innerText = document.body.classList
+      // })
+    </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/all.min.js"></script>
+  </body>
 
 </html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" translate="yes" data-bs-theme="auto" dir="rtl">
+
+  <head>
+    <script src="../bootstrap/js/color-modes.js"></script>
+    <title>About CSS</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Peter Eshak Abdo" />
+    <meta name="keywords" content="CSS" />
+    <meta name="description" content="CSS" />
+    <link rel="icon" type="image/x-icon" href="../images/apple.png" />
+    <link rel="stylesheet" href="../css/PLStyle.css">
+    <link rel="stylesheet" href="../css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../css/light.css" media="(prefers-color-scheme: light)">
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="../css/bondi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top rounded-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-apple-alt fa-xl" style="color: red;"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+          aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="../index.html">Home Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="HTML.html">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active fw-bold" aria-current="page" href="#">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="SQL.html">SQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="PHP.html">PHP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="Python.html">Python</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <a class="btn rounded-pill main-btn" href="Register.html">Login</a>
+        </div>
+      </div>
+    </nav>
+    <div class="landing d-flex justify-content-center align-items-center p-4 mb-3 rounded-pill">
+      <div class="text-center">
+        <img src="../images/css.jpeg" alt="CSS Icon" class="rounded-5" />
+        <h1 class="fw-bolder" id="headerTitle">ما هي لغة CSS</h1>
+        <p>
+          Cascading Style Sheets، لغة CSS وتعرف باللغة العربية باسم صفحات الطرز
+          المتراصة، وهي واحدةٌ من التقنيات الرئيسية المستخدمة لبناء صفحات الويب
+          جنبًا إلى جنب مع لغة ترميز النص التشعبي HTML. وتمتاز بإضفاء السمات
+          والخصائص على البنية الخاصة بصفحات الويب كالألوان والخطوط والأنماط التي
+          تتخذها صفحة الويب.
+        </p>
+        <a class="btn btn-primary rounded-pill main-btn" href="#start">Get start</a>
+      </div>
+    </div>
+    <div class="navigation p-4 mb-4 rounded-5">
+      <div class="responsive">
+        <div id="cardImg">
+          <a target="_parent" href="../images/css.jpeg"><img src="../images/css.jpeg" alt="CSS Icon" /></a>
+          <div id="cardText">
+            <P>CSS Logo</P>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div id="cardImg">
+          <a target="_parent" href="../images/css1.jpeg"><img src="../images/css1.jpeg" alt="CSS Code" /></a>
+          <div id="cardText">
+            <P>CSS Code</P>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div id="cardImg">
+          <a target="_parent" href="../images/css2.png"><img src="../images/css2.png" alt="CSS Code" /></a>
+          <div id="cardText">
+            <P>CSS Code</P>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div id="cardImg">
+          <a target="_parent" href="../images/css3.png"><img src="../images/css3.png" alt="CSS Code" /></a>
+          <div id="cardText">
+            <P>CSS Code</P>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div id="cardImg">
+          <a target="_parent" href="../images/css4.jpeg"><img src="../images/css4.jpeg" alt="CSS Code" /></a>
+          <div id="cardText">
+            <P>CSS Code</P>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="article p-4 mb-4 rounded-5">
+      <p id="start">
+        كما يوضح أيضًا الكيفية التي سيتم بها استعراض عناصر صفحات الويب والتطبيقات
+        على الشاشة في الواجهة النهائية للمستخدم بغض النظر عن نوعها، وتُدرَج عادةً
+        في المستندات المكتوبة بإحدى لغات الترميز XML أو HTML أو XHTML وغيرها. ولا
+        بد من الإشارة إلى أنه قبل الشروع باستخدام وتوظيف لغة CSS يجب أن يكون بحوزة
+        المستخدم معلومات أساسية حول لغة HTML ووسومها.
+      </p>
+      <h1>خصائص لغة CSS</h1>
+      <ul>
+        <li>
+          إمكانية دمج العديد من الخيارات والرموز الخاصة بلغة HTML و CSS معًا
+          للوصول إلى السمات المتكاملة.
+        </li>
+        <li>المرونة والسهولة في الاستخدام والتطبيق.</li>
+        <li>الحساسية لحالة الأحرف.</li>
+        <li>
+          إتاحة الأفق أمام المستخدم في توظيف العديد من الأوامر والوسوم للانتهاء
+          بصفحة ويب متكاملة المظهر.
+        </li>
+        <li>الحاجة الماسة لأساسيات لغة HTML أولًا.</li>
+        <li>
+          التحكم بأبعاد الصفحة ومظهرها من أنماط الخلفية والحجم والعناصر ومحاذاتها
+          وألوان الخطوط وغيرها الكثير.
+        </li>
+        <li>
+          تحقيق التناسق بين أبعاد صفحة الويب في الموقع مهما كان حجم الموقع كبيرًا.
+        </li>
+        <li>
+          زيادة السرعة في التحميل والتقليل من التكاليف المترتبة على استضافة
+          الموقع.
+        </li>
+        <li>
+          تحقيق التوافقية بين صفحات الويب الموجودة في الموقع مع المتصفحات بكل
+          سهولةٍ، وبالتالي التكيف بينهما مما يترتب عليه استقطاب زوار أكثر للتمتع
+          بمشاهدة الموقع.
+        </li>
+        <li>
+          فتح الأفق أمام المستخدم في وضع خيارات العرض بين يديه بما يتماشى مع
+          الجهاز المستخدم.
+        </li>
+      </ul>
+    </div>
+    <div class="article p-4 mb-4 rounded-5">
+      <h1>تاريخ لغة CSS</h1>
+      <p>
+        يعود تاريخ ظهور لغة CSS لأول مرةٍ إلى العاشرِ من شهر أكتوبر سنة 1994 على
+        يد المبرمج هاكون فيوم لاي، حيث تعاون مع فريقٍ متكاملٍ من المبرمجين للخروجِ
+        في نهاية المطاف بأوراقٍ نمطيةٍ لتصميم صفحات الويب بكل كفاءةٍ، وتم التوصل
+        إلى ضرورة إصدار الوثيقة الأولى W3C CSS سنة 1996؛ فكان ذلك الإصدار الأول
+        لها> وتم إصدار النسخة التالية بناءً على اقتراحات بيرت بوس فشارك المؤسسين
+        بها، وتشير المعلومات إلى أن تطويرها قد جاء لغايات توفير الأنماط للويب التي
+        يتطلبها الأمر ووفقًا ما تقتضيه الحاجة.
+      </p>
+      <p>
+        ازدادت أهمية لغة CSS بالتزامنِ مع تطوير لغة HTML لتكمل كلٍ منهما الأخرى،
+        وقد ساهم دمجهما بجعل عرض الصفحات عبر الشبكة العنكبوتية أمرًا أكثر وضوحًا
+        وسهولةً وأهميةً للمستخدمين. وفي كل إصدارٍ من إصدارات هذه اللغة كان فريق
+        العمل القائم على تطويرها حريصًا على معالجة الثغرات التي يعاني منها الإصدار
+        السابق وإضافة المزيد من السمات والخصائص الإضافية للخروج بإصدارٍ جديدٍ،
+        وتشير المعلومات إلى أن هناك إصداراتٍ ما زالت خاضعةً للتطوير منذ عام 2014.
+      </p>
+    </div>
+
+    <footer class="p-4 rounded-5">
+      <div id="animation1">
+        <p id="textAnimate">Peter Eshak Abdo</p>
+      </div><br>
+      <dl>
+        <dt>Home Page</dt>
+        <dd>
+          <a href="../index.html" title="Home Page"><button type="button" class="pageLinks"><span>Home Page
+              </span></button></a>
+        </dd>
+        <dt>HTML</dt>
+        <dd>
+          <a href="HTML.html" title="About HTML"><button type="button" class="pageLinks"><span>About HTML
+              </span></button></a>
+        </dd>
+        <dt>SQL</dt>
+        <dd>
+          <a href="SQL.html" title="About SQL"><button type="button" class="pageLinks"><span>About
+                SQL
+              </span></button></a>
+        </dd>
+        <dt>Python</dt>
+        <dd>
+          <a href="Python.html" title="About Python"><button type="button" class="pageLinks"><span>About
+                Python
+              </span></button></a>
+        </dd>
+        <dt>PHP</dt>
+        <dd>
+          <a href="PHP.html" title="About PHP"><button type="button" class="pageLinks"><span>About
+                PHP
+              </span></button></a>
+        </dd>
+      </dl>
+    </footer>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/all.min.js"></script>
+  </body>
+
+</html>

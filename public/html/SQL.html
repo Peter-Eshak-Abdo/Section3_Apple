@@ -11,61 +11,208 @@
     <meta name="keywords" content="SQL" />
     <meta name="description" content="SQL" />
     <link rel="icon" type="image/x-icon" href="../images/apple.png" />
-    <link rel="stylesheet" href="../css/PLStyle.css">
+    <link rel="stylesheet" href="../css/homeStyle.css">
     <link rel="stylesheet" href="../css/dark.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="../css/light.css" media="(prefers-color-scheme: light)">
 
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bootstrap/css/all.min.css">
-    <link rel="stylesheet" href="../css/bondi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap_icons/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top rounded-5">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <i class="fa-solid fa-apple-alt fa-xl" style="color: red;"></i></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
-          aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="main">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="../index.html">Home Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="HTML.html">HTML</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="CSS.html">CSS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3 active fw-bold" aria-current="page" href="#">SQL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="PHP.html">PHP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="Python.html">Python</a>
-            </li>
-          </ul>
-          <div class="search ps-3 pe-3 d-none d-lg-block">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <a class="btn rounded-pill main-btn" href="Register.html">Login</a>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+      </symbol>
+    </svg>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+        aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+            aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+            aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+            aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar navbar-expand-lg sticky-top rounded-5 pe-3 bg-primary-subtle">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-apple-alt fa-xl" style="color: red;"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../index.html">الصفحة الرئسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="HTML.html">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="CSS.html">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 active fw-bold text-primary" aria-current="page" href="#">SQL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="PHP.html">PHP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="Python.html">Python</a>
+          </li>
+        </ul>
+        <a class="btn link-info rounded-pill main-btn" href="Register.html">تسجيل دخول</a>
+        <div class="form-check form-switch mx-2">
+          <label for="checkTheme text-body">Dark Mode</label>
+          <input type="checkbox" class="form-check-input p-2" title="Theme Mode" role="switch" id="checkTheme"
+            id="flexSwitchCheckChecked" checked onclick="myFunction()" />
         </div>
       </div>
-    </nav>
-    <div class="landing d-flex justify-content-center align-items-center p-4 mb-3 rounded-pill">
+    </div>
+    <div class="landing d-flex justify-content-center align-items-center px-5 py-4 mb-3 rounded-pill bg-primary-subtle">
       <div class="text-center">
-        <img src="../images/sql.jpeg" alt="SQL Icon" class="rounded-5" style="max-width: 200px;"/>
-        <h1 class="fw-bolder" id="headerTitle">ما هي لغة SQL</h1>
-        <p>
+        <img src="../images/sql.jpeg" alt="SQL Icon" class="rounded-5" style="max-width: 200px;" />
+        <p class="fs-1 fw-bolder text-primary">ما هي لغة SQL</p>
+        <p class="fs-4 text-body">
           صُمّمت لغة SQL أو لغة الاستعلامات البنائية لأغراض استرجاع المعلومات من
           قواعد البيانات، ففي سبعينيات القرن الماضي؛ بدأ علماء الكمبيوتر بتطوير طرق
           معيارية لمعالجة قواعد البيانات، حيث تمكّنوا من خلال بحوثهم من تطوير لغة ال
@@ -76,65 +223,78 @@
           الكبرى كشركة مايكروسوفت وشركة أوراكل بالإضافة إلى النسخة المفتوحة المصدر
           والمسمّاه ب MySQL والتي حازت على شهرة واسعة جدًا.
         </p>
-        <a class="btn btn-primary rounded-pill main-btn" href="#start">Get start</a>
+        <a class="btn btn-primary rounded-pill main-btn text-body" href="#start">Get start</a>
       </div>
     </div>
-    <div class="navigation p-4 mb-4 rounded-5">
-      <div class="responsive">
-        <div id="cardImg">
-          <a target="_parent" href="../images/sql.jpeg"><img src="../images/sql.jpeg" alt="SQL Icon" /></a>
-          <div id="cardText">
-            <P>SQL Logo</P>
-          </div>
+    <div class="navigation row justify-content-lg-center mb-4 rounded-5 mx-auto bg-primary-subtle">
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5"
+        style="max-width: 220px; max-height: fit-content;">
+        <div class="card-header">
+          <a target="_parent" href="../images/sql.jpeg"><img src="../images/sql.jpeg" alt="SQL Icon"
+              class="img-fluid rounded-5" style="height: 180px;width: 180px;" /></a>
+        </div>
+        <div class="card-body">
+          <P class="card-text text-body text-center fs-4">SQL Logo</P>
         </div>
       </div>
-      <div class="responsive">
-        <div id="cardImg">
-          <a target="_parent" href="../images/sql1.png"><img src="../images/sql1.png" alt="SQL Code" /></a>
-          <div id="cardText">
-            <P>SQL Code</P>
-          </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5"
+        style="max-width: 220px; max-height: fit-content;">
+        <div class="card-header">
+          <a target="_parent" href="../images/sql1.png"><img src="../images/sql1.png" alt="SQL Code"
+              class="img-fluid rounded-5" style="height: 180px;width: 180px;" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Code</p>
         </div>
       </div>
-      <div class="responsive">
-        <div id="cardImg">
-          <a target="_parent" href="../images/sql2.png"><img src="../images/sql2.png" alt="SQL Code" /></a>
-          <div id="cardText">
-            <P>SQL Code</P>
-          </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5"
+        style="max-width: 220px; max-height: fit-content;">
+        <div class="card-header">
+          <a target="_parent" href="../images/sql2.png"><img src="../images/sql2.png" alt="SQL Code"
+              class="img-fluid rounded-5" style="height: 180px;width: 180px;" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Code</p>
         </div>
       </div>
-      <div class="responsive">
-        <div id="cardImg">
-          <a target="_parent" href="../images/sql3.jpeg"><img src="../images/sql3.jpeg" alt="SQL Code" /></a>
-          <div id="cardText">
-            <P>SQL Code</P>
-          </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5"
+        style="max-width: 200px; max-height: fit-content;">
+        <div class="card-header">
+          <a target="_parent" href="../images/sql3.jpeg"><img src="../images/sql3.jpeg" alt="SQL Code"
+              class="img-fluid rounded-5" style="height: 180px;width: 180px;" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Code</p>
         </div>
       </div>
-      <div class="responsive">
-        <div id="cardImg">
-          <a target="_parent" href="../images/sql4.jpeg"><img src="../images/sql4.jpeg" alt="SQL Code" /></a>
-          <div id="cardText">
-            <P>SQL Code</P>
-          </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-md-4 m-lg-2 rounded-5"
+        style="max-width: 210px; max-height: fit-content;">
+        <div class="card-header">
+          <a target="_parent" href="../images/sql4.jpeg"><img src="../images/sql4.jpeg" alt="SQL Code"
+              class="img-fluid rounded-5" style="height: 180px;width: 180px;" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Code</p>
         </div>
       </div>
-      <div class="clearfix"></div>
     </div>
-    <div class="article p-4 mb-4 rounded-5">
-      <p id="start"> تقوم لغة SQL على
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-4 text-body" id="start"> تقوم لغة SQL على
         مبدأ توفير وتزويد المبرمجين ومستخدمي الكمبيوتر بطريقة تساعدهم في الحصول
         على المعلومات المطلوبة من قاعدة البيانات، حيث تتكون هذه اللغة في مستواها
         البسيط من مجموعة قليلة من الأوامر منها:
       </p>
       <ul>
-        <li>حدّد: ويستخدم لاختيار البيانات.</li>
-        <li>أدرج: ويستخدم لإضافة البيانات إلى القاعدة.</li>
-        <li>حدّث: ويستخدم لتعديل المعلومات.</li>
-        <li>احذف: ويستخدم لحذف المعلومات.</li>
+        <li class="fs-5 text-body">حدّد: ويستخدم لاختيار البيانات.</li>
+        <li class="fs-5 text-body">أدرج: ويستخدم لإضافة البيانات إلى القاعدة.</li>
+        <li class="fs-5 text-body">حدّث: ويستخدم لتعديل المعلومات.</li>
+        <li class="fs-5 text-body">احذف: ويستخدم لحذف المعلومات.</li>
       </ul>
-      <p>
+      <p class="fs-4 text-body">
         تستخدم لغة ال SQL بشكل كبير في قواعد البيانات الحكومية ومواقع التجارة
         الالكترونية على الإنترنت، كما تستخدم على نطاق واسع في أعمال التجارة وذلك
         لأغراض إدارة قواعد البيانات المتعلّقة بها، ومع الوقت؛ استبدلت ال SQL بما
@@ -145,92 +305,173 @@
         البيانات الكبيرة التي لا يكون التحقق فيها من البيانات بشكل صارم.
       </p>
     </div>
-    <div class="article p-4 mb-4 rounded-5">
-      <h1>مميزات لغة ال SQL وسلبياتها</h1>
-      <p>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 text-body text-primary-emphasis">مميزات لغة ال SQL وسلبياتها</p>
+      <p class="fs-4 text-body">
         ليس هناك لغة برمجة كاملة فجميع اللغات لها إيجابيات وسلبيات، واستخدام لغة
         وتفضيلها على الأخرى يكون تبعًا للتطبيقات المراد تطويرها واستخدامها أو
         تبعًا لمستوى المبرمج ورغبته في تعلّم اللغة، ولغة ال SQL كغيرها من اللغات
         لها مجموعة من المميزات والسلبيات والتي تمّ إيجازها في النقاط الآتية:
       </p>
     </div>
-    <div class="article p-4 mb-4 rounded-5">
-      <h1>مميزات لغة SQL:</h1>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 text-body text-primary-emphasis">مميزات لغة SQL:</p>
       <ul>
-        <li>
-          لا تحتاج إلى كتابة كود؛ حيث أنه من السهل إدارة أنظمة قواعد البيانات
-          باستخدام لغة SQL المعيارية دون الحاجة لكتابة كود حقيقي
+        <li class="fs-5 text-body">لا تحتاج إلى كتابة كود؛ حيث أنه من السهل إدارة أنظمة قواعد البيانات باستخدام لغة SQL المعيارية دون الحاجة
+          لكتابة كود حقيقي
         </li>
-        <li>
-          يمكن نقل البيانات داخل القواعد التي تستخدم لغة SQL بكل سهولة ويسر،
-          حيث تدعم هذه اللغة أجهزة الكمبيوتر الثابتة والمحمولة والأجهزة
-          اللوحية والخوادم وأجهزة الكمبيوتر المركزية، بالإضافة إلى أنه يمكن
-          تشغيلها على أنظمة محليّة تستخدم الشبكات الداخلية أو الإنترنت.
-        </li>
-        <li>
-          تُعدّ SQL لغةً تفاعليّة حيث تستخدم للتواصل مع قاعدة البيانات
-          للمساعدة في استرداد البيانات المتعلّقة بالاستفسارات المعقّدة في
-          ثوانٍ.
-        </li>
-        <li>
-          تُمكّن المستخدمين من إظهار الهيكل الخاص بقاعدة البيانات بأشكال
-          مختلفة تبعًا للصلاحيّات التي يملكها المستخدم.
+        <li class="fs-5 text-body">يمكن نقل البيانات داخل القواعد التي تستخدم لغة SQL بكل سهولة ويسر، حيث تدعم هذه اللغة أجهزة الكمبيوتر
+          الثابتة والمحمولة والأجهزة اللوحية والخوادم وأجهزة الكمبيوتر المركزية، بالإضافة إلى أنه يمكن تشغيلها على أنظمة
+          محليّة تستخدم الشبكات الداخلية أو الإنترنت.</li>
+        <li class="fs-5 text-body">تُعدّ SQL لغةً تفاعليّة حيث تستخدم للتواصل مع قاعدة البيانات للمساعدة في استرداد البيانات المتعلّقة
+          بالاستفسارات المعقّدة في ثوانٍ.</li>
+        <li class="fs-5 text-body">تُمكّن المستخدمين من إظهار الهيكل الخاص بقاعدة البيانات بأشكال مختلفة تبعًا للصلاحيّات التي يملكها المستخدم.
         </li>
       </ul>
     </div>
-    <div class="article p-4 mb-4 rounded-5">
-      <h1>سلبيات لغة SQL:</h1>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 text-body text-primary-emphasis">سلبيات لغة SQL:</p>
       <ul>
-        <li>
-          التحكّم الجزئي: فتبعًا لقواعد العمل المخفيّة؛ فإنه لا يمتلك
-          المبرمجين السيطرة الكاملة على قاعدة البيانات.
+        <li class="fs-5 text-body">التحكّم الجزئي: فتبعًا لقواعد العمل المخفيّة؛ فإنه لا يمتلك المبرمجين السيطرة الكاملة على قاعدة البيانات.
         </li>
-        <li>
-          التكلفة: لبعض إصدارات لغة SQL تكاليف تشغيلية عالية، مما يجعل من
-          الصعب على بعض المبرمجين استخدامها.
-        </li>
-        <li>
-          واجهة المستخدم: للغة SQL واجهة استخدام معقّدة تجعل من الصعب على بعض
-          المستخدمين التعامل معها.
-        </li>
+        <li class="fs-5 text-body">التكلفة: لبعض إصدارات لغة SQL تكاليف تشغيلية عالية، مما يجعل من الصعب على بعض المبرمجين استخدامها.</li>
+        <li class="fs-5 text-body">واجهة المستخدم: للغة SQL واجهة استخدام معقّدة تجعل من الصعب على بعض المستخدمين التعامل معها.</li>
       </ul>
     </div>
-
-    <footer class="p-4 rounded-5">
+    <div class="footer p-4 rounded-5 bg-primary-subtle">
       <div id="animation1">
         <p id="textAnimate">Peter Eshak Abdo</p>
       </div><br>
-      <dl>
-        <dt>Home Page</dt>
-        <dd>
-          <a href="../index.html" title="Home Page"><button type="button" class="pageLinks"><span>Home Page
-              </span></button></a>
-        </dd>
-        <dt>HTML</dt>
-        <dd>
-          <a href="HTML.html" title="About HTML"><button type="button" class="pageLinks"><span>About HTML
-              </span></button></a>
-        </dd>
-        <dt>CSS</dt>
-        <dd>
-          <a href="CSS.html" title="About CSS"><button type="button" class="pageLinks"><span>About
-                CSS
-              </span></button></a>
-        </dd>
-        <dt>Python</dt>
-        <dd>
-          <a href="Python.html" title="About Python"><button type="button" class="pageLinks"><span>About
-                Python
-              </span></button></a>
-        </dd>
-        <dt>PHP</dt>
-        <dd>
-          <a href="PHP.html" title="About PHP"><button type="button" class="pageLinks"><span>About
-                PHP
-              </span></button></a>
-        </dd>
-      </dl>
-    </footer>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              Home Page
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <a href="../index.html" title="Home Page"><button type="button" class="pageLinks"><span
+                    class="text-body">Home
+                    Page
+                  </span></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              About HTML
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="HTML.html" title="عن HTML"><button type="button" class="pageLinks">
+                  <span class="text-body">عن HTML </span>
+                </button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              About CSS
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="CSS.html" title="عن CSS"><button type="button" class="pageLinks">
+                  <span class="text-body">عن CSS </span>
+                </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour">
+              About Python
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="Python.html" title="عن Python"><button type="button" class="pageLinks">
+                  <span class="text-body">عن Python </span>
+                </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive">
+              About PHP
+            </button>
+
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="PHP.html" title="عن PHP"><button type="button" class="pageLinks">
+                  <span class="text-body">عن PHP </span>
+                </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-3 rounded-5 bg-primary-subtle">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary">
+          <i class="fa-solid fa-apple-alt fa-xl" style="color: red"></i>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Peter Eshak Abdo, Apple</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://wa.me/message/AOH44Q2TY3H2E1"><i class="bi bi-whatsapp"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body" href="https://wa.me/qr/36KBTEORX2N3O1"><i class="bi bi-whatsapp"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://github.com/Peter-Eshak-Abdo"><i class="bi bi-github"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.facebook.com/PeterEshakAbdo"><i
+              class="bi bi-facebook"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://youtube.com/@petereshak3109?si=aMQ3lbmePcqioSCv"><i
+              class="bi bi-youtube"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="mailto:petereshak11@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        </li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.dataset.bsTheme =
+          element.dataset.bsTheme == "light" ? "dark" : "light";
+      }
+    </script>
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../bootstrap/js/all.min.js"></script>

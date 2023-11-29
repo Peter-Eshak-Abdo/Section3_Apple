@@ -1,118 +1,19 @@
-  body {
-    background: rgb(138, 63, 251);
-    background: radial-gradient(circle, rgba(138, 63, 251, 1) 0%, rgba(243, 213, 104, 1) 29%, rgba(93, 131, 241, 1) 38%, rgba(89, 251, 225, 1) 48%, rgba(187, 252, 70, 1) 100%);
-  }
+/* Start scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 207, 175);
+}
 
-  /* header {
-    background-color: rgb(225, 225, 225,.5);
-    color: rgb(25, 25, 25);
-    border-color: rgb(2, 2, 2);
-    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.35), 0 24px 28px 0 rgba(0, 0, 0, 0.35);
-  }
-  
-  nav {
-    background: rgb(225, 225, 225, .5);
-    border-color: rgb(2, 2, 2);
-    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.35), 0 24px 28px 0 rgba(0, 0, 0, 0.35);
-  }
-  
-  article {
-    background-color: rgb(225, 225, 225, .5);
-    border-color: rgb(253, 253, 253);
-    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35), 0 24px 28px 0 rgba(255, 255, 255, 0.35);
-  }
- */
-  footer {
-    background-color: rgb(225, 225, 225, .5);
-    color: rgb(25, 25, 25);
-    border-color: rgb(253, 253, 253);
-    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35), 0 24px 28px 0 rgba(255, 255, 255, 0.35);
-  }
-
-  h1 {
-    color: rgb(25, 25, 25);
-    text-shadow: 2px 2px 5px rgb(0, 60, 255);
-  }
-
-  p {
-    color: rgb(25, 25, 25);
-  }
-
-  #headerTitle {
-    color: rgb(32, 16, 10);
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-  }
-
-  #cardImg {
-    border-color: rgb(253, 253, 253);
-    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35), 0 24px 28px 0 rgba(255, 255, 255, 0.35);
-  }
-
-  #cardImg:hover {
-    border: 1px solid rgb(253, 253, 253);
-    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35), 0 24px 28px 0 rgba(255, 255, 255, 0.35);
-  }
-
-  #cardImg img {
-    border-color: rgb(253, 253, 253);
-  }
-
-  #PLi {
-    color: rgb(25, 25, 25);
-  }
-
-  #pageLinks {
-    background-color: rgb(225, 225, 225);
-    color: rgb(25, 25, 25);
-  }
-
-  label {
-    color: rgb(25, 25, 25);
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="date"] {
-    background-color: rgb(225, 225, 225);
-    border: 2px solid rgb(255, 0, 0);
-    color: rgb(25, 25, 25);
-  }
-
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="password"]:focus,
-  input[type="date"]:focus {
-    background-color: rgb(225, 225, 255);
-  }
-
-  textarea {
-    border: 2px solid rgb(51, 51, 51);
-    background-color: rgb(51, 51, 51);
-  }
-
-  select {
-    background-color: rgb(212, 212, 212);
-  }
-
-  input[type=button],
-  input[type=submit],
-  input[type=reset] {
-    background-color: rgb(4, 169, 109);
-    color: rgb(225, 225, 225);
-  }
-
-  #textAnimate {
-    color: rgb(225, 225, 225);
-  }
-
-  /* Start Navbar */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(151, 122, 102, 0.6);
+}
+/* End scrollbar */
+/* Start Navbar */
 .navbar {
-  background-color: rgb(200, 219, 238);
+  background-color: rgb(47, 51, 54);
 }
 
 .navbar .navbar-nav .nav-link {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .navbar .navbar-nav .nav-link.active,
@@ -121,17 +22,9 @@
   color: rgb(51, 209, 204);
 }
 
-.navbar .search {
-  border-left: 1px solid rgb(51, 209, 204);
-}
-
-.navbar .search svg {
-  color: rgb(51, 209, 204);
-}
-
 .navbar .navbar-toggler {
-  color: rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
 }
 
 .navbar .navbar-toggler[aria-expanded="true"] {
@@ -139,28 +32,82 @@
 }
 
 /* End NavBar */
+
 /* Start Landing */
 .landing {
-  background-color: rgb(200, 219, 238);
-  min-height: calc(60vh - 72px);
+    background-color: rgb(150, 185, 220);
 }
-
 /* End Landing */
-/* Start Navigation */
-.navigation {
-  background: rgba(225, 225, 225, 0.95);
-  border-color: rgb(2, 2, 2);
-  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.35),
-      0 24px 28px 0 rgba(0, 0, 0, 0.35);
+/* Start Navigation & Article */
+.navigation,.article,.footer,.container {
+    background: rgb(150, 185, 220);
+    border-color: rgb(253, 253, 253);
+    box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35),
+        0 24px 28px 0 rgba(255, 255, 255, 0.35);
 }
-
 /* End Navigation */
-/* Start Article */
-.article {
-  background: rgb(225, 225, 225, 0.95);
-  border-color: rgb(2, 2, 2);
-  box-shadow: 0 24px 28px 0 rgb(0, 0, 0, 0.35),
-      0 24px 28px 0 rgb(0, 0, 0, 0.35);
+
+p {
+  color: rgb(25, 25, 25);
 }
 
-/* End Article */
+#cardImg {
+  border-color: rgb(253, 253, 253);
+  box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35),
+    0 24px 28px 0 rgba(255, 255, 255, 0.35);
+}
+
+#cardImg:hover {
+  border: 1px solid rgb(253, 253, 253);
+  box-shadow: 0 24px 28px 0 rgba(255, 255, 255, 0.35),
+    0 24px 28px 0 rgba(255, 255, 255, 0.35);
+}
+
+#cardImg img {
+  border-color: rgb(253, 253, 253);
+}
+
+#pageLinks {
+  background-color: rgb(225, 225, 225);
+  color: rgb(25, 25, 25);
+}
+
+label {
+  color: rgb(25, 25, 25);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  background-color: rgb(225, 225, 225);
+  border: 2px solid rgb(255, 0, 0);
+  color: rgb(25, 25, 25);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+  background-color: rgb(225, 225, 255);
+}
+
+textarea {
+  border: 2px solid rgb(51, 51, 51);
+  background-color: rgb(51, 51, 51);
+}
+
+select {
+  background-color: rgb(212, 212, 212);
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: rgb(4, 169, 109);
+  color: rgb(225, 225, 225);
+}
+
+#textAnimate {
+  color: rgb(225, 225, 225);
+}
